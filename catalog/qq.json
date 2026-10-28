@@ -1,0 +1,87 @@
+﻿{
+    "product":  "qq",
+    "packageName":  "com.tencent.mobileqq",
+    "description":  "QQ Android historical versions",
+    "versions":  [
+                     {
+                         "product":  "qq",
+                         "packageName":  "com.tencent.mobileqq",
+                         "versionName":  "9.3.75",
+                         "fileName":  "QQ9.3.75.apk",
+                         "size":  393030322,
+                         "sha256":  "15053806bf745faed270091a8f6c3422eda64fda53d291e8e2a1d408cb8e3780",
+                         "sourcePage":  "https://www.7723.cn/apps/59723/history-2321133",
+                         "downloadedAt":  "2026-10-28T05:24:46.7876697Z"
+                     },
+                     {
+                         "product":  "qq",
+                         "packageName":  "com.tencent.mobileqq",
+                         "versionName":  "9.3.70",
+                         "fileName":  "QQ9.3.70.apk",
+                         "size":  394238266,
+                         "sha256":  "8dad38c1ef28f837893569fbc5995e7f73f5b4e568f7da75f67dbb077cb93b3f",
+                         "sourcePage":  "https://www.7723.cn/apps/59723/history-2300217",
+                         "downloadedAt":  "2026-10-28T05:24:46.3150194Z"
+                     },
+                     {
+                         "product":  "qq",
+                         "packageName":  "com.tencent.mobileqq",
+                         "versionName":  "9.3.65",
+                         "fileName":  "QQ9.3.65.apk",
+                         "size":  392021727,
+                         "sha256":  "377aa4b7a7af1a426d1083a3f2937cf1b508249851f1707d0c630dd29374b6d3",
+                         "sourcePage":  "https://www.7723.cn/apps/59723/history-2292965",
+                         "downloadedAt":  "2026-10-28T05:24:45.8329962Z"
+                     },
+                     {
+                         "product":  "qq",
+                         "packageName":  "com.tencent.mobileqq",
+                         "versionName":  "9.3.60",
+                         "fileName":  "QQ9.3.60.apk",
+                         "size":  391019122,
+                         "sha256":  "f8c15a027359e096485317ff4b1f46a3da31dbb7a388929b1ab171c48abbb1a7",
+                         "sourcePage":  "https://www.7723.cn/apps/59723/history-2286219",
+                         "downloadedAt":  "2026-10-28T05:24:45.3590008Z"
+                     },
+                     {
+                         "product":  "qq",
+                         "packageName":  "com.tencent.mobileqq",
+                         "versionName":  "9.3.55",
+                         "fileName":  "QQ9.3.55.apk",
+                         "size":  389727209,
+                         "sha256":  "07d17f211aa44b2bc6c7369939b5d9b3b7064f56210010eb8eb022c9335466b6",
+                         "sourcePage":  "https://www.7723.cn/apps/59723/history-2275910",
+                         "downloadedAt":  "2026-10-28T05:24:44.9373387Z"
+                     },
+                     {
+                         "product":  "qq",
+                         "packageName":  "com.tencent.mobileqq",
+                         "versionName":  "9.3.50",
+                         "fileName":  "QQ9.3.50.apk",
+                         "size":  415609052,
+                         "sha256":  "54e0f16c4b09c054cad2062420ee41a8144a52bfaeb8c0d16a1cce64a754faeb",
+                         "sourcePage":  "https://www.7723.cn/apps/59723/history-2261963",
+                         "downloadedAt":  "2026-10-28T05:24:44.5097669Z"
+                     },
+                     {
+                         "product":  "qq",
+                         "packageName":  "com.tencent.mobileqq",
+                         "versionName":  "9.3.35",
+                         "fileName":  "QQ9.3.35.apk",
+                         "size":  414889080,
+                         "sha256":  "fcfa228276a073999fb993f46236a2152650a7b73eadf9110ccf5e97231e7dd1",
+                         "sourcePage":  "https://www.7723.cn/apps/59723/history-2247353",
+                         "downloadedAt":  "2026-10-28T05:24:44.0910531Z"
+                     },
+                     {
+                         "product":  "qq",
+                         "packageName":  "com.tencent.mobileqq",
+                         "versionName":  "9.3.30",
+                         "fileName":  "QQ9.3.30.apk",
+                         "size":  413622632,
+                         "sha256":  "415a60dfb2119bf064e486219eb19d8de6ff0892f5b60f3b680c999485cba992",
+                         "sourcePage":  "https://www.7723.cn/apps/59723/history-2236843",
+                         "downloadedAt":  "2026-10-28T05:24:43.6249395Z"
+                     }
+                 ]
+}

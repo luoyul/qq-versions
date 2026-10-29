@@ -109,7 +109,7 @@ foreach ($entry in $wanted) {
             downloadedAt = (Get-Date).ToUniversalTime().ToString('o')
         }
         $existing = @($catalog.versions | Where-Object { $_.versionName -ne $entry.Version })
-        $catalog.versions = @($existing + $record | Sort-Object versionName -Descending)
+        $catalog.versions = @($existing + $record | Sort-Object @{ Expression = { [version]$_.versionName }; Descending = $true })
     }
 }
 

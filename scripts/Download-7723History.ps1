@@ -12,6 +12,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+$ProgressPreference = 'SilentlyContinue'
 $repoRoot = Split-Path -Parent $PSScriptRoot
 $historyUrl = 'https://www.7723.cn/apps/59723/history'
 $catalogPath = Join-Path $repoRoot 'catalog\qq.json'

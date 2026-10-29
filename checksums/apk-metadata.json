@@ -1,0 +1,310 @@
+﻿[
+    {
+        "File":  "QQ8.8.23.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "2034",
+        "VersionName":  "8.8.23",
+        "Size":  144312021
+    },
+    {
+        "File":  "QQ8.8.33.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "2150",
+        "VersionName":  "8.8.33",
+        "Size":  145287745
+    },
+    {
+        "File":  "QQ8.8.50.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "2324",
+        "VersionName":  "8.8.50",
+        "Size":  158356058
+    },
+    {
+        "File":  "QQ8.8.68.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "2538",
+        "VersionName":  "8.8.68",
+        "Size":  426552421
+    },
+    {
+        "File":  "QQ8.8.80.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "2596",
+        "VersionName":  "8.8.80",
+        "Size":  337697439
+    },
+    {
+        "File":  "QQ8.8.85.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "2712",
+        "VersionName":  "8.8.85",
+        "Size":  313550920
+    },
+    {
+        "File":  "QQ8.8.93.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "2886",
+        "VersionName":  "8.8.93",
+        "Size":  367506817
+    },
+    {
+        "File":  "QQ8.9.3.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "3118",
+        "VersionName":  "8.9.3",
+        "Size":  341759834
+    },
+    {
+        "File":  "QQ8.9.5.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "3176",
+        "VersionName":  "8.9.5",
+        "Size":  342847149
+    },
+    {
+        "File":  "QQ9.1.60.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "9388",
+        "VersionName":  "9.1.60",
+        "Size":  312413256
+    },
+    {
+        "File":  "QQ9.1.65.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "9558",
+        "VersionName":  "9.1.65",
+        "Size":  314884942
+    },
+    {
+        "File":  "QQ9.1.70.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "9898",
+        "VersionName":  "9.1.70",
+        "Size":  386466680
+    },
+    {
+        "File":  "QQ9.1.71.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "9906",
+        "VersionName":  "9.1.71",
+        "Size":  386466680
+    },
+    {
+        "File":  "QQ9.1.75.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "10068",
+        "VersionName":  "9.1.75",
+        "Size":  385810260
+    },
+    {
+        "File":  "QQ9.1.90.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "10290",
+        "VersionName":  "9.1.90",
+        "Size":  387817223
+    },
+    {
+        "File":  "QQ9.1.91.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "10298",
+        "VersionName":  "9.1.91",
+        "Size":  387825543
+    },
+    {
+        "File":  "QQ9.1.95.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "10460",
+        "VersionName":  "9.1.95",
+        "Size":  388449022
+    },
+    {
+        "File":  "QQ9.1.97.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "10800",
+        "VersionName":  "9.1.97",
+        "Size":  389044371
+    },
+    {
+        "File":  "QQ9.2.0.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "10970",
+        "VersionName":  "9.2.0",
+        "Size":  385617905
+    },
+    {
+        "File":  "QQ9.2.10.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "11310",
+        "VersionName":  "9.2.10",
+        "Size":  389611416
+    },
+    {
+        "File":  "QQ9.2.15.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "11480",
+        "VersionName":  "9.2.15",
+        "Size":  392027608
+    },
+    {
+        "File":  "QQ9.2.20.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "11650",
+        "VersionName":  "9.2.20",
+        "Size":  394895131
+    },
+    {
+        "File":  "QQ9.2.25.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "11820",
+        "VersionName":  "9.2.25",
+        "Size":  396489596
+    },
+    {
+        "File":  "QQ9.2.27.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "12160",
+        "VersionName":  "9.2.27",
+        "Size":  396724126
+    },
+    {
+        "File":  "QQ9.2.30.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "12330",
+        "VersionName":  "9.2.30",
+        "Size":  387842207
+    },
+    {
+        "File":  "QQ9.2.35.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "12500",
+        "VersionName":  "9.2.35",
+        "Size":  408431047
+    },
+    {
+        "File":  "QQ9.2.5.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "11140",
+        "VersionName":  "9.2.5",
+        "Size":  387209619
+    },
+    {
+        "File":  "QQ9.2.50.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "12670",
+        "VersionName":  "9.2.50",
+        "Size":  399094269
+    },
+    {
+        "File":  "QQ9.2.55.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "12840",
+        "VersionName":  "9.2.55",
+        "Size":  397359051
+    },
+    {
+        "File":  "QQ9.2.60.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "13010",
+        "VersionName":  "9.2.60",
+        "Size":  399055342
+    },
+    {
+        "File":  "QQ9.2.65.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "13180",
+        "VersionName":  "9.2.65",
+        "Size":  400494691
+    },
+    {
+        "File":  "QQ9.2.66.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "13188",
+        "VersionName":  "9.2.66",
+        "Size":  400511215
+    },
+    {
+        "File":  "QQ9.2.70.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "13350",
+        "VersionName":  "9.2.70",
+        "Size":  401414245
+    },
+    {
+        "File":  "QQ9.2.80.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "13690",
+        "VersionName":  "9.2.80",
+        "Size":  394726227
+    },
+    {
+        "File":  "QQ9.2.85.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "13860",
+        "VersionName":  "9.2.85",
+        "Size":  396403998
+    },
+    {
+        "File":  "QQ9.2.90.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "14030",
+        "VersionName":  "9.2.90",
+        "Size":  397879295
+    },
+    {
+        "File":  "QQ9.2.95.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "14200",
+        "VersionName":  "9.2.95",
+        "Size":  400101249
+    },
+    {
+        "File":  "QQ9.3.0.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "14370",
+        "VersionName":  "9.3.0",
+        "Size":  403927009
+    },
+    {
+        "File":  "QQ9.3.1.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "14378",
+        "VersionName":  "9.3.1",
+        "Size":  403996641
+    },
+    {
+        "File":  "QQ9.3.10.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "14710",
+        "VersionName":  "9.3.10",
+        "Size":  401612422
+    },
+    {
+        "File":  "QQ9.3.15.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "14880",
+        "VersionName":  "9.3.15",
+        "Size":  403104800
+    },
+    {
+        "File":  "QQ9.3.20.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "15050",
+        "VersionName":  "9.3.20",
+        "Size":  408607023
+    },
+    {
+        "File":  "QQ9.3.25.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "15220",
+        "VersionName":  "9.3.25",
+        "Size":  409933393
+    },
+    {
+        "File":  "QQ9.3.5.apk",
+        "PackageName":  "com.tencent.mobileqq",
+        "VersionCode":  "14540",
+        "VersionName":  "9.3.5",
+        "Size":  403158602
+    }
+]

@@ -22,7 +22,7 @@ CHECKSUM_PATH = ROOT / "checksums" / "QQ-SHA256SUMS.txt"
 
 
 def fetch_json(url):
-    request = urllib.request.Request(url, headers={"User-Agent": "qq-versions-updater"})
+    request = urllib.request.Request(url, headers={"User-Agent": "qq-versions-updater", "Cache-Control": "no-cache", "Pragma": "no-cache"})
     with urllib.request.urlopen(request, timeout=30) as response:
         return json.load(response)
 

@@ -12,6 +12,7 @@ from pathlib import Path
 
 PRIMARY_CONFIG = "https://qq-web.cdn-go.cn/im.qq.com_new/latest/rainbow/mobileConfig.json"
 FALLBACK_CONFIG = "https://im.qq.com/proxy/domain/qq-web.cdn-go.cn/im.qq.com_new/latest/rainbow/mobileConfig.json"
+SIGN_ENDPOINT = "https://im.qq.com/http2rpc/gotrpc/noauth/trpc.qqntv2.urlsign.UrlSign/GetSign"
 PACKAGE = "com.tencent.mobileqq"
 REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "luoyul/qq-versions")
 ROOT = Path(os.environ.get("GITHUB_WORKSPACE", Path.cwd()))
@@ -23,6 +24,29 @@ def fetch_json(url):
     request = urllib.request.Request(url, headers={"User-Agent": "qq-versions-updater"})
     with urllib.request.urlopen(request, timeout=30) as response:
         return json.load(response)
+
+
+def get_signed_url(url):
+    body = json.dumps({"url": url}).encode("utf-8")
+    request = urllib.request.Request(
+        SIGN_ENDPOINT,
+        data=body,
+        headers={
+            "User-Agent": "qq-versions-updater",
+            "Content-Type": "application/json",
+            "x-oidb": json.dumps({"uint32_command": "0x9b8e", "uint32_service_type": 1}),
+            "Origin": "https://im.qq.com",
+            "Referer": "https://im.qq.com/",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            result = json.load(response)
+        signed = ((result.get("data") or {}).get("url"))
+        return signed or url
+    except Exception:
+        return url
 
 
 def run(*args, check=True, capture=False):
@@ -80,7 +104,8 @@ def main():
 
     with tempfile.TemporaryDirectory() as temp_dir:
         apk = Path(temp_dir) / file_name
-        cache_busted_url = download_url + ("&" if "?" in download_url else "?") + "t=" + str(int(datetime.now(timezone.utc).timestamp()))
+        signed_url = get_signed_url(download_url)
+        cache_busted_url = signed_url if signed_url != download_url else download_url + ("&" if "?" in download_url else "?") + "t=" + str(int(datetime.now(timezone.utc).timestamp()))
         request = urllib.request.Request(cache_busted_url, headers={"User-Agent": "qq-versions-updater", "Cache-Control": "no-cache"})
         with urllib.request.urlopen(request, timeout=120) as response, apk.open("wb") as output:
             shutil.copyfileobj(response, output, length=1024 * 1024)

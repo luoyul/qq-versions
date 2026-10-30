@@ -80,7 +80,8 @@ def main():
 
     with tempfile.TemporaryDirectory() as temp_dir:
         apk = Path(temp_dir) / file_name
-        request = urllib.request.Request(download_url, headers={"User-Agent": "qq-versions-updater"})
+        cache_busted_url = download_url + ("&" if "?" in download_url else "?") + "t=" + str(int(datetime.now(timezone.utc).timestamp()))
+        request = urllib.request.Request(cache_busted_url, headers={"User-Agent": "qq-versions-updater", "Cache-Control": "no-cache"})
         with urllib.request.urlopen(request, timeout=120) as response, apk.open("wb") as output:
             shutil.copyfileobj(response, output, length=1024 * 1024)
 

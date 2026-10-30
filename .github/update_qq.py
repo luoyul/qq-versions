@@ -79,10 +79,11 @@ def sha256(path):
 
 
 def main():
+    cache_query = "?t=" + uuid.uuid4().hex
     try:
-        config = fetch_json(PRIMARY_CONFIG)
+        config = fetch_json(PRIMARY_CONFIG + cache_query)
     except Exception:
-        config = fetch_json(FALLBACK_CONFIG)
+        config = fetch_json(FALLBACK_CONFIG + cache_query)
 
     android = config.get("android") or {}
     version_name = str(android.get("version") or "")

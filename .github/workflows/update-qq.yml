@@ -28,6 +28,8 @@ jobs:
 
       - name: Set up Android build tools
         uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
 
       - name: Install aapt2
         run: sdkmanager "build-tools;35.0.0"

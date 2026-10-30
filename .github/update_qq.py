@@ -7,6 +7,7 @@ import subprocess
 import sys
 import tempfile
 import urllib.request
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -89,30 +90,31 @@ def main():
     if not version_name or not download_url:
         raise RuntimeError("Official config does not contain android.version or android.x64Link")
 
-    filename_match = re.search(r"/(?:[^/]*?)(\d+\.\d+\.\d+)\.(\d+)(?:[_./-]|$)", download_url)
+    filename_match = re.search(r"/(?:[^/]*?)(\d+\.\d+\.\d+)(?:\.|[_/-]|$)", download_url)
     if not filename_match or filename_match.group(1) != version_name:
-        raise RuntimeError(f"Cannot extract versionCode from official URL: {download_url}")
-    version_code = filename_match.group(2)
-    release_tag = f"qq-{version_name}-{version_code}"
+        raise RuntimeError(f"Cannot extract versionName from official URL: {download_url}")
     file_name = f"QQ{version_name}.apk"
 
     catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8-sig"))
     versions = catalog.setdefault("versions", [])
-    if any(str(item.get("versionName")) == version_name and str(item.get("versionCode")) == version_code for item in versions):
-        print(f"Already catalogued: {release_tag}")
-        return
 
     with tempfile.TemporaryDirectory() as temp_dir:
         apk = Path(temp_dir) / file_name
         signed_url = get_signed_url(download_url)
-        cache_busted_url = signed_url if signed_url != download_url else download_url + ("&" if "?" in download_url else "?") + "t=" + str(int(datetime.now(timezone.utc).timestamp()))
+        cache_busted_url = signed_url if signed_url != download_url else download_url + ("&" if "?" in download_url else "?") + "t=" + uuid.uuid4().hex
         request = urllib.request.Request(cache_busted_url, headers={"User-Agent": "qq-versions-updater", "Cache-Control": "no-cache"})
         with urllib.request.urlopen(request, timeout=120) as response, apk.open("wb") as output:
             shutil.copyfileobj(response, output, length=1024 * 1024)
 
         package_name, actual_code, actual_name = read_badging(apk)
-        if package_name != PACKAGE or actual_code != version_code or actual_name != version_name:
+        if package_name != PACKAGE or actual_name != version_name:
             raise RuntimeError(f"APK metadata mismatch: {package_name} {actual_name} {actual_code}")
+
+        version_code = actual_code
+        release_tag = f"qq-{version_name}-{version_code}"
+        if any(str(item.get("versionName")) == version_name and str(item.get("versionCode")) == version_code for item in versions):
+            print(f"Already catalogued: {release_tag}")
+            return
 
         digest = sha256(apk)
         size = apk.stat().st_size
